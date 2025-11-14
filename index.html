@@ -1257,10 +1257,11 @@
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const name = urlParams.get('to');
+      
       if (!!name) {
           // Tạo lời chào
           const greeting = `Thân gửi: ${name}`;
-
+          document.title = `Thiệp mời cưới online gửi tới ${name}`;
           // Hiển thị lời chào
           // alert(greeting);
 
